@@ -1,0 +1,3 @@
+Please check the constraints related to the activity below, which might be impossible to schedule:
+
+No: 1, Id: 1 (T:Rossi Mario, S:Matematica, St:1A)

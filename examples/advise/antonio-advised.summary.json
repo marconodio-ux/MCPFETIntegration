@@ -1,0 +1,132 @@
+{
+  "ok": true,
+  "adviseId": "advise-1794255579943-hudkc5",
+  "documentId": "antonio-advise-smoke",
+  "stripped": "C:\\path\\to\\MCPFETIntegration\\examples\\advise\\antonio-stripped-for-advise.fet",
+  "suggestionCount": 11,
+  "types": [
+    "ConstraintActivitiesSameStartingTime",
+    "ConstraintBreakTimes",
+    "ConstraintMinDaysBetweenActivities",
+    "ConstraintSubjectPreferredRoom",
+    "ConstraintTeachersMaxHoursDaily"
+  ],
+  "codes": [
+    "break_times_missing",
+    "lab_preferred_room",
+    "max_hours_daily",
+    "min_days_missing",
+    "same_starting_parallel"
+  ],
+  "high": [
+    {
+      "id": "mindays-1",
+      "type": "ConstraintMinDaysBetweenActivities",
+      "code": "min_days_missing",
+      "titleIt": "Distribuire lo split di Laboratorio Meccanico (Rossi) su più giorni"
+    },
+    {
+      "id": "mindays-2",
+      "type": "ConstraintMinDaysBetweenActivities",
+      "code": "min_days_missing",
+      "titleIt": "Distribuire lo split di Laboratorio (Bianchi) su più giorni"
+    },
+    {
+      "id": "mindays-3",
+      "type": "ConstraintMinDaysBetweenActivities",
+      "code": "min_days_missing",
+      "titleIt": "Distribuire lo split di Laboratorio (Marraffa) su più giorni"
+    },
+    {
+      "id": "sst-4",
+      "type": "ConstraintActivitiesSameStartingTime",
+      "code": "same_starting_parallel",
+      "titleIt": "Allineare in parallelo P1A: elettro ↔ meccanica"
+    },
+    {
+      "id": "sst-5",
+      "type": "ConstraintActivitiesSameStartingTime",
+      "code": "same_starting_parallel",
+      "titleIt": "Allineare in parallelo P1A: elettro ↔ meccanica"
+    },
+    {
+      "id": "sst-6",
+      "type": "ConstraintActivitiesSameStartingTime",
+      "code": "same_starting_parallel",
+      "titleIt": "Allineare in parallelo P1A: elettro ↔ meccanica"
+    },
+    {
+      "id": "sst-7",
+      "type": "ConstraintActivitiesSameStartingTime",
+      "code": "same_starting_parallel",
+      "titleIt": "Allineare in parallelo P1A: elettro ↔ meccanica"
+    },
+    {
+      "id": "prefroom-8",
+      "type": "ConstraintSubjectPreferredRoom",
+      "code": "lab_preferred_room",
+      "titleIt": "Aula dedicata per «Laboratorio»"
+    },
+    {
+      "id": "prefroom-9",
+      "type": "ConstraintSubjectPreferredRoom",
+      "code": "lab_preferred_room",
+      "titleIt": "Aula dedicata per «Laboratorio Meccanico»"
+    },
+    {
+      "id": "maxh-11",
+      "type": "ConstraintTeachersMaxHoursDaily",
+      "code": "max_hours_daily",
+      "titleIt": "Limite ore giornaliere docenti (max 5)"
+    }
+  ],
+  "summaryIt": "Trovati 11 suggerimenti (10 ad alta confidenza). L’advisor propone; FET genera ancora l’orario.",
+  "apply": {
+    "appliedCount": 10,
+    "skippedCount": 0,
+    "createdEntities": [
+      {
+        "kind": "rooms",
+        "name": "LAB"
+      },
+      {
+        "kind": "rooms",
+        "name": "LAB Meccanico"
+      }
+    ],
+    "appliedTypes": [
+      "ConstraintActivitiesSameStartingTime",
+      "ConstraintMinDaysBetweenActivities",
+      "ConstraintSubjectPreferredRoom",
+      "ConstraintTeachersMaxHoursDaily"
+    ],
+    "skipped": [],
+    "saved": "C:\\path\\to\\MCPFETIntegration\\examples\\advise\\antonio-advised.fet",
+    "summaryIt": "Applicati 10 vincoli consigliati. Il file è pronto per fet_generate — l’advisor non genera l’orario."
+  },
+  "reload": {
+    "counts": {
+      "days": 5,
+      "hours": 6,
+      "real_days": 0,
+      "real_hours": 0,
+      "subjects": 2,
+      "activity_tags": 0,
+      "teachers": 3,
+      "students": 1,
+      "activities": 12,
+      "buildings": 0,
+      "rooms": 2
+    },
+    "timeConstraintsByType": {
+      "ConstraintBasicCompulsoryTime": 1,
+      "ConstraintMinDaysBetweenActivities": 3,
+      "ConstraintActivitiesSameStartingTime": 4,
+      "ConstraintTeachersMaxHoursDaily": 1
+    },
+    "spaceConstraintsByType": {
+      "ConstraintBasicCompulsorySpace": 1,
+      "ConstraintSubjectPreferredRoom": 2
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Esempio NL completato (dopo chiarimenti tipici sui gaps)
+# Mapping atteso:
+#   Year P1 → Group P1A → Subgroup P1A-meccanica | P1A-elettro
+#   Rossi: Laboratorio meccanico → P1A (classe intera) 8h
+#   Marraffa: Laboratorio → P1A-meccanica 7h
+#   Bianchi: Laboratorio → P1A-elettro 7h
+#   SameStartingTime sulle componenti parallele Marraffa↔Bianchi
+
+Istituto: Istituto Esempio FET NL
+Giorni: Lunedì, Martedì, Mercoledì, Giovedì, Venerdì
+Fasce: 08:00, 09:00, 10:00, 11:00, 12:00, 13:00
+
+Rossi insegna laboratorio meccanico in P1A per 8 ore/sett.
+Marraffa in P1A sempre laboratorio 7 ore.
+P1A è divisa in 2 gruppi — Marraffa solo metà meccanica, l’altra metà elettro ha Bianchi.
+Bianchi insegna laboratorio in P1A-elettro per 7 ore.

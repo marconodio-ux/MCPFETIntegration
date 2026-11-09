@@ -1,0 +1,64 @@
+{
+  "name": "mcp-fet-integration",
+  "version": "0.7.0",
+  "description": "Model Context Protocol (MCP) server that exposes Liviu Lalescu's FET school timetable generator as tools for ChatGPT, Claude, Gemini, and other MCP clients.",
+  "type": "module",
+  "bin": {
+    "mcp-fet": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-catalog.mjs",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "mcp:http": "node build/httpBridge.js",
+    "mcp:http:dev": "tsx src/httpBridge.ts",
+    "mcp:http:tunnel": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/start-mcp-http-tunnel.ps1",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "generate-catalog": "node scripts/generate-constraint-catalog.mjs",
+    "fetch-fet": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/fetch-fet.ps1",
+    "fetch-fet-windows": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/fetch-fet-windows.ps1",
+    "prepare-publish": "npm run typecheck && npm run build",
+    "smoke:assignments": "npm run build && node scripts/smoke-from-assignments.mjs",
+    "smoke:nl": "npm run build && node scripts/smoke-from-nl.mjs",
+    "smoke:private-sample": "npm run build && node scripts/smoke-private-sample-nl.mjs",
+    "smoke:catalog-nl": "npm run build && node scripts/smoke-catalog-nl-live.mjs",
+    "smoke:advise": "npm run build && node scripts/smoke-advise.mjs",
+    "smoke:diagnose": "npm run build && node scripts/smoke-diagnose.mjs",
+    "smoke:generate": "npm run build && node scripts/smoke-generate.mjs",
+    "smoke:http": "npm run build && node scripts/smoke-http-bridge.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "fet",
+    "timetable",
+    "school",
+    "scheduling",
+    "chatgpt",
+    "claude",
+    "gemini"
+  ],
+  "author": "Antonio Nordio",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_ORG/MCPFETIntegration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_ORG/MCPFETIntegration/issues"
+  },
+  "homepage": "https://github.com/YOUR_ORG/MCPFETIntegration#readme",
+  "dependencies": {
+    "@modelcontextprotocol/node": "^2.1.2",
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,5 @@
+Title: FET warning
+Message: Activity with id=1 (T:Rossi Mario, S:Matematica, St:1A) has no allowed slot - please correct that.
+
+Title: FET warning
+Message: Activity with id=2 (T:Rossi Mario, S:Matematica, St:1A) has no allowed slot - please correct that.

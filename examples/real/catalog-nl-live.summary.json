@@ -1,0 +1,586 @@
+{
+  "ok": true,
+  "errors": [],
+  "catalogTotal": 358,
+  "phraseSummary": {
+    "total": 358,
+    "live": 358,
+    "stub": 0,
+    "sampleTypes": [
+      "ConstraintBasicCompulsoryTime",
+      "ConstraintBreakTimes",
+      "ConstraintActivitiesSameStartingTime",
+      "ConstraintStudentsSetNotAvailableTimes",
+      "ConstraintTeacherNotAvailableTimes",
+      "ConstraintMinDaysBetweenActivities",
+      "ConstraintTeachersMaxHoursDaily",
+      "ConstraintTwoActivitiesConsecutive",
+      "ConstraintActivityPreferredStartingTime",
+      "ConstraintActivityPreferredStartingTimes",
+      "ConstraintTeacherMaxHoursDaily",
+      "ConstraintBasicCompulsorySpace",
+      "ConstraintSubjectPreferredRoom",
+      "ConstraintSubjectPreferredRooms",
+      "ConstraintRoomNotAvailableTimes",
+      "ConstraintActivityPreferredRoom"
+    ],
+    "sampleLive": 16,
+    "sampleMissing": []
+  },
+  "failed": [],
+  "modeCaveats": [
+    {
+      "type": "ConstraintTeachersMaxGapsPerMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxGapsPerMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintActivitiesMaxInATerm",
+      "mode": "Terms"
+    },
+    {
+      "type": "ConstraintActivitiesOccupyMaxTerms",
+      "mode": "Terms"
+    },
+    {
+      "type": "ConstraintStudentsSetMinGapsBetweenOrderedPairOfActivityTagsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinGapsBetweenOrderedPairOfActivityTagsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinGapsBetweenOrderedPairOfActivityTagsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinGapsBetweenOrderedPairOfActivityTagsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinGapsBetweenActivityTagPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinGapsBetweenActivityTagPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinGapsBetweenActivityTagPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinGapsBetweenActivityTagPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinGapsBetweenOrderedPairOfActivityTagsBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinGapsBetweenOrderedPairOfActivityTagsBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinGapsBetweenOrderedPairOfActivityTagsBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinGapsBetweenOrderedPairOfActivityTagsBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinGapsBetweenActivityTagBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinGapsBetweenActivityTagBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinGapsBetweenActivityTagBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinGapsBetweenActivityTagBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxRealDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxRealDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinRealDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinRealDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxGapsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxGapsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinHoursPerMorning",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinHoursPerMorning",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMorningIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMorningIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherAfternoonIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersAfternoonIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersActivityTagMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherActivityTagMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsActivityTagMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetActivityTagMaxHoursDailyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxGapsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxGapsPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxRealDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxRealDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxSpanPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxSpanPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxSpanPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxSpanPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxTwoConsecutiveMornings",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxTwoConsecutiveMornings",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxTwoConsecutiveAfternoons",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxTwoConsecutiveAfternoons",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersAfternoonsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherAfternoonsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMorningsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMorningsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinHoursPerMorning",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinHoursPerMorning",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxZeroGapsPerAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxZeroGapsPerAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinAfternoonsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinMorningsPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMorningIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMorningIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetAfternoonIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsAfternoonIntervalMaxDaysPerWeek",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxHoursPerAllAfternoons",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxHoursPerAllAfternoons",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxHoursPerAllAfternoons",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxHoursPerAllAfternoons",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinRestingHoursBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMinRestingHoursBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinRestingHoursBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinRestingHoursBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsAfternoonsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetAfternoonsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMorningsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMorningsEarlyMaxBeginningsAtSecondHour",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxGapsPerWeekForRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxGapsPerWeekForRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxGapsPerWeekForRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxGapsPerWeekForRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintMinHalfDaysBetweenActivities",
+      "mode": "MA/Terms?"
+    },
+    {
+      "type": "ConstraintActivitiesMinInATerm",
+      "mode": "Terms"
+    },
+    {
+      "type": "ConstraintMaxTermsBetweenActivities",
+      "mode": "Terms"
+    },
+    {
+      "type": "ConstraintTeacherMaxActivityTagsPerRealDayFromSet",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxActivityTagsPerRealDayFromSet",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxActivityTagsPerRealDayFromSet",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxActivityTagsPerRealDayFromSet",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintMaxHalfDaysBetweenActivities",
+      "mode": "MA/Terms?"
+    },
+    {
+      "type": "ConstraintTeachersMinHoursPerAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMinHoursPerAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMinHoursPerAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMinHoursPerAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxHoursPerTerm",
+      "mode": "Terms"
+    },
+    {
+      "type": "ConstraintTeachersMaxHoursPerTerm",
+      "mode": "Terms"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxSingleEarlyMorningGaps",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxSingleEarlyMorningGaps",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxSingleEarlyAfternoonGaps",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxSingleEarlyAfternoonGaps",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxSingleGapsBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxSingleGapsBetweenMorningAndAfternoon",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxHoursContinuouslyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxHoursContinuouslyRealDays",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxBuildingChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxBuildingChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxRoomChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxRoomChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxBuildingChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxBuildingChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxRoomChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxRoomChangesPerRealDayInInterval",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxRoomChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxRoomChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxRoomChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxRoomChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsMaxBuildingChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintStudentsSetMaxBuildingChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeacherMaxBuildingChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintTeachersMaxBuildingChangesPerRealDay",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintRoomMaxActivityTagsPerRealDayFromSet",
+      "mode": "MA"
+    },
+    {
+      "type": "ConstraintRoomsMaxActivityTagsPerRealDayFromSet",
+      "mode": "MA"
+    }
+  ],
+  "checked": 358
+}

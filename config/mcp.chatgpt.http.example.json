@@ -1,0 +1,39 @@
+{
+  "_comment": "Streamable HTTP bridge. ChatGPT rejects http://127.0.0.1 — use Connection→Tunnel (tunnel_id) or https://…/mcp from scripts/start-mcp-http-tunnel.ps1. See docs/chatgpt-mcp-plugin.md.",
+  "name": "Orario Fet",
+  "transport": "streamable-http",
+  "url": "https://REPLACE_WITH_TUNNEL_HOSTNAME/mcp",
+  "localUrl": "http://127.0.0.1:3847/mcp",
+  "tunnelId": "tunnel_REPLACE_FROM_PLATFORM",
+  "headers": {
+    "Authorization": "Bearer REPLACE_WITH_MCP_HTTP_TOKEN"
+  },
+  "env": {
+    "MCP_HTTP_HOST": "127.0.0.1",
+    "MCP_HTTP_PORT": "3847",
+    "MCP_HTTP_PATH": "/mcp",
+    "MCP_HTTP_TOKEN": "REPLACE_WITH_LONG_RANDOM_SECRET",
+    "FET_CL_PATH": "C:\\path\\to\\MCPFETIntegration\\vendor\\bin\\fet-7.12.0\\fet-cl.exe"
+  },
+  "instructionsFile": "C:\\path\\to\\MCPFETIntegration\\config\\chatgpt-custom-gpt.instructions.md",
+  "healthUrl": "http://127.0.0.1:3847/health",
+  "recommendedTools": [
+    "fet_nl_parse",
+    "fet_nl_build",
+    "fet_nl_patch",
+    "fet_nl_extract",
+    "fet_advise",
+    "fet_advise_apply",
+    "fet_describe_constraints",
+    "fet_nl_phrase_catalog",
+    "fet_document_open",
+    "fet_document_summary",
+    "fet_document_save",
+    "fet_generate",
+    "fet_job_status",
+    "fet_diagnose",
+    "fet_export",
+    "fet_constraint_catalog",
+    "fet_status"
+  ]
+}

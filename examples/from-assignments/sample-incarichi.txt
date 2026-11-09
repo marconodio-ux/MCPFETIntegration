@@ -1,0 +1,13 @@
+# Esempio incarichi insegnanti (scuola secondaria IT) → input per fet_from_assignments
+Istituto: Scuola Media Esempio
+Giorni: Lunedì, Martedì, Mercoledì, Giovedì, Venerdì
+Ore: 08:00, 09:00, 10:00, 11:00, 12:00, 13:00
+
+Rossi Mario: Matematica — 1A — 5 ore (2+2+1)
+Rossi Mario: Matematica — 1B — 5 ore (2+2+1)
+Bianchi Anna: Italiano — 1A — 6h split 2+2+2
+Bianchi Anna: Italiano — 2A — 6 ore
+Verdi Luca: Storia — 1A — 2
+Verdi Luca: Geografia — 1A — 2 ore (1+1)
+Neri Paola: Scienze — 1A e 1B — 4 ore (2+2)
+Conti Sara: Inglese — 2A — 3 ore

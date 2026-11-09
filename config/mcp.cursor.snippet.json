@@ -1,0 +1,11 @@
+{
+  "fet": {
+    "command": "node",
+    "args": [
+      "C:\\path\\to\\MCPFETIntegration\\build\\index.js"
+    ],
+    "env": {
+      "FET_CL_PATH": "C:\\path\\to\\MCPFETIntegration\\vendor\\bin\\fet-7.12.0\\fet-cl.exe"
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "ok": true,
+  "rawGaps": [
+    {
+      "code": "year_without_section",
+      "ask": "Per Rossi (laboratorio meccanico, 8 ore): quali sezioni di 1ª? (es. P1A, oppure tutte le sezioni dell’anno)"
+    },
+    {
+      "code": "split_teacher_incomplete",
+      "ask": "Quale materia e quante ore/settimana per Bianchi sul gruppo elettro di P1A?"
+    }
+  ],
+  "saved": "C:\\path\\to\\MCPFETIntegration\\examples\\from-nl\\antonio-from-nl.fet",
+  "mapping": {
+    "teachers": [
+      "Bianchi",
+      "Marraffa",
+      "Rossi"
+    ],
+    "subjects": [
+      "Laboratorio",
+      "Laboratorio Meccanico"
+    ],
+    "years": [
+      "P1"
+    ],
+    "groups": [
+      "P1A"
+    ],
+    "subgroups": [
+      "P1A-elettro",
+      "P1A-meccanica"
+    ],
+    "activityIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "splitGroups": [
+      {
+        "activityGroupId": 1,
+        "activityIds": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "split": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "activityGroupId": 2,
+        "activityIds": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "split": [
+          2,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "activityGroupId": 3,
+        "activityIds": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "split": [
+          2,
+          2,
+          2,
+          1
+        ]
+      }
+    ],
+    "parallelPairs": [
+      {
+        "group": "P1A",
+        "activityIdsA": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "activityIdsB": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "constraint": "ConstraintActivitiesSameStartingTime"
+      }
+    ],
+    "assumptions": [
+      "Mode=Official; giorni=Lunedì,Martedì,Mercoledì,Giovedì,Venerdì; ore/giorno=08:00,09:00,10:00,11:00,12:00,13:00",
+      "Classi IT tipo P1A → Year P1 + Group P1A; sottogruppi → Subgroup P1A-<label> (nomi univoci).",
+      "Split settimanale non dichiarato → pattern default; MinDaysBetweenActivities (MinDays=1, weight=95%).",
+      "BasicCompulsoryTime/Space a peso 100%.",
+      "Nessuna aula generata se non dichiarata nel testo.",
+      "ConstraintActivitiesSameStartingTime: 4 coppie P1A-meccanica↔P1A-elettro (classe spezzata in parallelo)."
+    ],
+    "subgroupNames": {
+      "P1A|meccanica": "P1A-meccanica",
+      "P1A|P1A-meccanica": "P1A-meccanica",
+      "P1A|elettro": "P1A-elettro",
+      "P1A|P1A-elettro": "P1A-elettro"
+    }
+  },
+  "gaps": [
+    {
+      "code": "assignment_on_split_group",
+      "ask": "Rossi (Laboratorio Meccanico) è per tutta P1A o solo meccanica/elettro? (default: tutta la classe)"
+    }
+  ],
+  "warnings": [],
+  "summary": {
+    "path": "C:\\path\\to\\MCPFETIntegration\\examples\\from-nl\\antonio-from-nl.fet",
+    "version": "7.12.0",
+    "mode": "Official",
+    "institutionName": "Istituto Esempio FET NL",
+    "comments": "Generato da linguaggio naturale (MCP fet_nl_build).",
+    "counts": {
+      "days": 5,
+      "hours": 6,
+      "real_days": 0,
+      "real_hours": 0,
+      "subjects": 2,
+      "activity_tags": 0,
+      "teachers": 3,
+      "students": 1,
+      "activities": 12,
+      "buildings": 0,
+      "rooms": 0
+    },
+    "timeConstraintsByType": {
+      "ConstraintBasicCompulsoryTime": 1,
+      "ConstraintMinDaysBetweenActivities": 3,
+      "ConstraintActivitiesSameStartingTime": 4
+    },
+    "spaceConstraintsByType": {
+      "ConstraintBasicCompulsorySpace": 1
+    },
+    "generationOptions": 0
+  },
+  "subgroupNames": [
+    "P1A-meccanica",
+    "P1A-elettro"
+  ],
+  "activitySample": [
+    {
+      "id": "1",
+      "teacher": "Rossi",
+      "subject": "Laboratorio Meccanico",
+      "students": "P1A",
+      "duration": "2",
+      "groupId": "1"
+    },
+    {
+      "id": "2",
+      "teacher": "Rossi",
+      "subject": "Laboratorio Meccanico",
+      "students": "P1A",
+      "duration": "2",
+      "groupId": "1"
+    },
+    {
+      "id": "3",
+      "teacher": "Rossi",
+      "subject": "Laboratorio Meccanico",
+      "students": "P1A",
+      "duration": "2",
+      "groupId": "1"
+    },
+    {
+      "id": "4",
+      "teacher": "Rossi",
+      "subject": "Laboratorio Meccanico",
+      "students": "P1A",
+      "duration": "2",
+      "groupId": "1"
+    },
+    {
+      "id": "5",
+      "teacher": "Bianchi",
+      "subject": "Laboratorio",
+      "students": "P1A-elettro",
+      "duration": "2",
+      "groupId": "2"
+    },
+    {
+      "id": "6",
+      "teacher": "Bianchi",
+      "subject": "Laboratorio",
+      "students": "P1A-elettro",
+      "duration": "2",
+      "groupId": "2"
+    },
+    {
+      "id": "7",
+      "teacher": "Bianchi",
+      "subject": "Laboratorio",
+      "students": "P1A-elettro",
+      "duration": "2",
+      "groupId": "2"
+    },
+    {
+      "id": "8",
+      "teacher": "Bianchi",
+      "subject": "Laboratorio",
+      "students": "P1A-elettro",
+      "duration": "1",
+      "groupId": "2"
+    },
+    {
+      "id": "9",
+      "teacher": "Marraffa",
+      "subject": "Laboratorio",
+      "students": "P1A-meccanica",
+      "duration": "2",
+      "groupId": "3"
+    },
+    {
+      "id": "10",
+      "teacher": "Marraffa",
+      "subject": "Laboratorio",
+      "students": "P1A-meccanica",
+      "duration": "2",
+      "groupId": "3"
+    },
+    {
+      "id": "11",
+      "teacher": "Marraffa",
+      "subject": "Laboratorio",
+      "students": "P1A-meccanica",
+      "duration": "2",
+      "groupId": "3"
+    },
+    {
+      "id": "12",
+      "teacher": "Marraffa",
+      "subject": "Laboratorio",
+      "students": "P1A-meccanica",
+      "duration": "1",
+      "groupId": "3"
+    }
+  ],
+  "teachers": [
+    "Bianchi",
+    "Marraffa",
+    "Rossi"
+  ],
+  "parallelPairs": 1,
+  "timeConstraints": {
+    "ConstraintBasicCompulsoryTime": 1,
+    "ConstraintMinDaysBetweenActivities": 3,
+    "ConstraintActivitiesSameStartingTime": 4
+  }
+}

@@ -1,0 +1,19 @@
+MCP FET Integration
+Copyright (c) 2026 Antonio Nordio and contributors
+
+This project provides a Model Context Protocol (MCP) server that invokes
+FET (Free Educational Timetabling), created by Liviu Lalescu.
+
+FET
+  Homepage: https://lalescu.ro/liviu/fet/
+  Official archives on GitHub: https://github.com/lalesculiviu/fet
+  License: GNU Affero General Public License version 3 (AGPL-3.0)
+  Copyright (c) Liviu Lalescu and FET contributors
+
+This MCP project is also distributed under AGPL-3.0-only so that combined
+use/distribution with FET remains license-compatible. When you convey this
+software or provide it as a network service that incorporates FET, you must
+comply with AGPL-3.0, including offering Corresponding Source.
+
+See LICENSE and vendor/fet-src/*/COPYING (after fetch) for the full license text.
+See THIRD_PARTY.md for dependency notices.

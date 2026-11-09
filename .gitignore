@@ -1,0 +1,64 @@
+# Dependencies & build
+node_modules/
+build/
+dist/
+*.tsbuildinfo
+
+# Local runtime data
+data/input/*
+!data/input/.gitkeep
+data/output/*
+!data/output/.gitkeep
+data/jobs/*
+!data/jobs/.gitkeep
+*.log
+
+# FET upstream artifacts (download via scripts/fetch-fet.* / fetch-fet-windows.*)
+vendor/archives/
+vendor/fet-src/
+vendor/bin/
+vendor/fet-upstream/
+*.tar.xz
+*.tar.bz2
+*.tar.gz
+*.asc
+*.exe
+!scripts/**/*.ps1
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Private / local-only — entire tree never tracked (no README exceptions)
+private/
+private/**
+examples/real/*.fet
+examples/real/**/*.fet
+**/Orario2627rev02.fet
+**/Orario2627*.fet
+**/orario2627*.fet
+**/orario2627*.summary.json
+
+# Secrets / local credentials
+*.pem
+*.p12
+*.key
+secrets/
+.secrets/
+mcp-http-token*
+tunnel*.json
+
+# npm
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*

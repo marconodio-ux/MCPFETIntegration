@@ -1,0 +1,39 @@
+{
+  "_comment": "ChatGPT / MCP connector shape varies by UI. Prefer stdio on the local PC (Desktop). Cloud ChatGPT cannot reach this stdio without Desktop local MCP, Secure MCP Tunnel, or the Streamable HTTP bridge + opt-in tunnel (see docs/chatgpt-mcp-plugin.md and config/mcp.chatgpt.http.example.json).",
+  "name": "fet",
+  "transport": "stdio",
+  "command": "node",
+  "args": [
+    "C:\\path\\to\\MCPFETIntegration\\build\\index.js"
+  ],
+  "env": {
+    "FET_CL_PATH": "C:\\path\\to\\MCPFETIntegration\\vendor\\bin\\fet-7.12.0\\fet-cl.exe"
+  },
+  "httpBridge": {
+    "start": "npm run mcp:http",
+    "url": "http://127.0.0.1:3847/mcp",
+    "health": "http://127.0.0.1:3847/health",
+    "exampleConfig": "config/mcp.chatgpt.http.example.json"
+  },
+  "instructionsFile": "C:\\path\\to\\MCPFETIntegration\\config\\chatgpt-custom-gpt.instructions.md",
+  "openapiStub": "C:\\path\\to\\MCPFETIntegration\\config\\chatgpt-mcp.openapi.stub.json",
+  "recommendedTools": [
+    "fet_nl_parse",
+    "fet_nl_build",
+    "fet_nl_patch",
+    "fet_nl_extract",
+    "fet_advise",
+    "fet_advise_apply",
+    "fet_describe_constraints",
+    "fet_nl_phrase_catalog",
+    "fet_document_open",
+    "fet_document_summary",
+    "fet_document_save",
+    "fet_generate",
+    "fet_job_status",
+    "fet_diagnose",
+    "fet_export",
+    "fet_constraint_catalog",
+    "fet_status"
+  ]
+}

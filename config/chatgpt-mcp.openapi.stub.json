@@ -1,0 +1,75 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FET MCP bridge (documentary stub)",
+    "version": "0.7.0",
+    "description": "Documentary OpenAPI for the local Streamable HTTP bridge (npm run mcp:http). Prefer native MCP at POST /mcp. This stub is not a REST replacement for MCP tools."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:3847",
+      "description": "Local loopback Streamable HTTP bridge (default)"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "Bridge health",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean" },
+                    "server": { "type": "string" },
+                    "version": { "type": "string" },
+                    "transport": { "type": "string" },
+                    "mcpPath": { "type": "string" },
+                    "auth": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mcp": {
+      "post": {
+        "operationId": "mcpJsonRpc",
+        "summary": "MCP Streamable HTTP endpoint (JSON-RPC)",
+        "description": "Official MCP Streamable HTTP. Clients POST initialize / tools/list / tools/call here.",
+        "security": [{ "bearerToken": [] }, {}],
+        "responses": {
+          "200": {
+            "description": "JSON or SSE MCP response"
+          },
+          "401": {
+            "description": "Missing/invalid Bearer when MCP_HTTP_TOKEN is set"
+          }
+        }
+      },
+      "get": {
+        "operationId": "mcpSseListen",
+        "summary": "Optional SSE listen on the same MCP endpoint",
+        "responses": {
+          "200": { "description": "text/event-stream when accepted" },
+          "405": { "description": "Not allowed in some stateless modes" }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerToken": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Optional shared secret from env MCP_HTTP_TOKEN. Required when exposing beyond trusted loopback/Desktop."
+      }
+    }
+  }
+}

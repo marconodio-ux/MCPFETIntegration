@@ -1,0 +1,10 @@
+{
+  "version": "7.12.0",
+  "package": "fet-7.12.0.exe",
+  "url": "https://lalescu.ro/liviu/fet/download/fet-7.12.0.exe",
+  "sha256": "e2d65ca80a37068c548b5ad8c0736ecb38f63c3bea9fd04fe0ac4574ae59f566",
+  "extracted": "vendor/bin/fet-7.12.0",
+  "fetCl": "vendor/bin/fet-7.12.0/fet-cl.exe",
+  "fetchScript": "scripts/fetch-fet-windows.ps1",
+  "note": "Official Windows 10+ 64-bit Qt 6.12 build from Liviu Lalescu. Gitignored; re-fetch with npm run fetch-fet-windows."
+}
